@@ -1,0 +1,92 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+/* Estilizando menus pricipais */ 
+.topmenu{
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  background-color: #777;
+}
+.topmenu li{
+  float: left;
+}
+.topmenu li a{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+.topmenu li a:hover{
+  background-color: #222;
+}
+.topmenu li a.active{
+  color: white;
+  background-color: #4caf50;
+}
+
+/* 2 colunas flutuantes */
+.coluna{
+  float: left;
+  padding: 15px;
+}
+
+/* lipando colunas */
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* estilizando menu lateral esquerdo */
+.menulado{
+  width: 25%;
+}
+.menulado ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menulado li a{
+  margin-bottom: 4px;
+  display: block;
+  padding: 8px;
+  background-color: #eee;
+  text-decoration: none;
+  color: #666;
+}
+.menulado li a:hover{
+  background-color: #555;
+  color: white;
+}
+
+.menulado li a.active{
+  background-color: #008cba;
+  color: white;
+}
+
+/* Estilizando conteudos da direita */
+.header{
+  background-color: #2196f3;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+.conteudo{
+  width: 75%;
+}
+
+/* Estilizando Rodapé */
+.footer{
+  background-color: #444;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
